@@ -61,7 +61,7 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Text("Password Length"),
+              Text("Largo de contraseña"),
               Slider(
                 min: 4,
                 max: 20,
@@ -75,7 +75,7 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
                 label: _length.toString(),
               ),
               CheckboxListTile(
-                title: Text("Use Uppercase Letters"),
+                title: Text("Usar mayusculas"),
                 value: _useUppercase,
                 onChanged: (value) {
                   setState(() {
@@ -84,7 +84,7 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
                 },
               ),
               CheckboxListTile(
-                title: Text("Use Special Characters"),
+                title: Text("Usar caracteres especiales"),
                 value: _useSpecialChars,
                 onChanged: (value) {
                   setState(() {
@@ -93,7 +93,7 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
                 },
               ),
               CheckboxListTile(
-                title: Text("Use Numbers"),
+                title: Text("Usar numeros"),
                 value: _useNumbers,
                 onChanged: (value) {
                   setState(() {
@@ -103,7 +103,7 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
               ),
               ElevatedButton(
                 onPressed: _generatePassword,
-                child: Text("Generate Password"),
+                child: Text("Generar contraseña"),
               ),
               SizedBox(height: 16.0),
               SelectableText(
